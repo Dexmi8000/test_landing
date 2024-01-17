@@ -1,42 +1,56 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     padding: 0 5px 0 5px;
 }
-a{
+
+a {
     text-decoration: none;
 }
-ul,li{
+
+ul,
+li {
     list-style: none;
 }
-.navbar{
+
+/* ----- navbar start ----- */
+
+.navbar {
     display: flex;
     align-items: center;
-    margin: 40px auto 0px auto;
+    margin: 40px auto 80px auto;
     max-width: 1138px;
 }
-.menu{
+
+.menu {
     margin: 0 0 0 65px;
     width: 100%;
 }
-.menu__list{
+
+.menu__list {
     display: flex;
     justify-content: space-between;
     gap: 33px;
+
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
 }
-/* .menu__sublist{
-    display: flex;
-   
-} */
-.phone{
+
+.phone {
     position: relative;
     padding: 0 0 0 26px;
     color: #000;
 }
-.phone::before{
+
+.phone::before {
     content: "";
     display: block;
     width: 20px;
@@ -45,16 +59,19 @@ ul,li{
     position: absolute;
     top: 3px;
 }
-.menu__account{
+
+.menu__account {
     position: relative;
     padding: 0 32px 0 0;
 }
-.menu__account-img{
+
+.menu__account-img {
     width: 1px;
     height: 19px;
     display: block;
 }
-.menu__account::before{
+
+.menu__account::before {
     content: "";
     display: block;
     width: 1px;
@@ -63,32 +80,137 @@ ul,li{
     position: absolute;
     right: 0px;
 }
-.menu__item{
-color: #000;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 15px;
 
+.menu__link:hover::after {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    background: #B00000;
+    height: 2px;
+    top: 27px;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.menu__link:hover::after{
-content: "";
-position: absolute;
-border-radius: 10px;
-background: #B00000;
-height: 2px;
-top: 27px;
-width: 75%;
-left: 50%;
-transform: translateX(-50%);
-}
-.menu__link{
+
+.menu__link {
     color: #000;
     position: relative;
 }
-/* .menu__link:hover::after{
+
+/* ----- navbar end ----- */
+
+
+/* ----- hosting-description START----- */
+.hosting-description {
+    max-width: 1215px;
+    display: flex;
+    margin: 0px auto 79px auto;
+}
+
+.hosting-description__content {
+    max-width: 608px;
+    margin-right: 81px;
+}
+
+.hosting-description__content-img {
+    max-width: 552px;
+}
+
+.hosting-description__menu {
+    width: 248px;
+    margin: 0 0 26px 0;
+}
+
+.hosting-description__menu-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    color: rgba(214, 212, 212, 0.88);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    z-index: 2;
+}
+
+.hosting-description__menu-list::after {
     content: "";
-    display: block;
-    border-bottom: 2px solid #000;
-} */
+    position: absolute;
+    border-radius: 10px;
+    background: rgba(214, 212, 212, 0.88);
+    height: 1px;
+    top: 27px;
+    width: 98%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.hosting-description__menu-link {
+    position: relative;
+    color: rgba(214, 212, 212, 0.88);
+}
+
+.hosting-description__menu-link:hover {
+    color: #B00000;
+    font-size: 15px;
+}
+
+.hosting-description__menu-link:hover::after {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    background: #B00000;
+    height: 1px;
+    top: 26px;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.hosting-description__title {
+    margin: 0 0 34px 0;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 77.5px;
+    color: #2E2E2E;
+}
+
+.hosting-description__text {
+    margin: 0 0 60px 0;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+    color: #808080;
+}
+
+.hosting-description__button {
+    width: 160px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 24px 0 0;
+}
+
+.hosting-description__button:hover {
+    background: #B00000;
+    box-shadow: 0px 0px 64px 0px rgba(176, 0, 0, 0.30);
+    color: #fff;
+    border: none;
+}
