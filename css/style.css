@@ -1,11 +1,13 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
-    padding: 0 5px 0 5px;
+    padding: 0 0 0 0;
 }
 
 a {
@@ -213,4 +215,607 @@ li {
     box-shadow: 0px 0px 64px 0px rgba(176, 0, 0, 0.30);
     color: #fff;
     border: none;
+}
+
+/* ----- hosting-description END----- */
+
+
+/* ----- advantage START----- */
+.advantage {
+    max-width: 1284px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantage__text-block {
+    width: 642px;
+
+}
+
+.advantage__title {
+    color: #18191F;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+    margin: 0 0 25px 0;
+}
+
+.advantage__text {
+    max-width: 573px;
+    color: #18191F;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.advantage__partners {
+    max-width: 642px;
+    height: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px 0 42px;
+}
+
+.advantage__partners-items {
+    width: 600px;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0 18px 0;
+}
+
+.advantage__partners-items-bot {
+    margin-top: 0px;
+}
+
+.advantage__partners-item {}
+
+.advantage__partners-img {
+    width: 100%;
+}
+
+.advantage__points {
+    max-width: 1160px;
+    display: flex;
+    gap: 40px;
+    margin: 100px auto 130px auto;
+}
+
+.advantage__points-items {
+    width: 259px;
+    text-align: center;
+}
+
+.advantage__points-img {
+    margin: 0 0 12px 0;
+}
+
+.advantage__points-title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 4px 0;
+}
+
+.advantage__points-description {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* ----- advantage END----- */
+
+/* ----- tarif START----- */
+
+.tarif {
+    max-width: 1100px;
+    margin: 0 auto 105px auto;
+}
+
+
+
+.tarif__top-text {
+    width: 650px;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    margin: 0 auto 38px auto;
+}
+
+.tarif__text {
+    width: 80%;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 auto 50px auto;
+}
+
+.tarif__selector {
+    width: 650px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 70px auto;
+    padding: 0 0 0 87px;
+}
+
+.tarif__time {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 10px 0 0 0;
+}
+
+.tarif__discount {
+    width: 87px;
+    height: 24px;
+    border-radius: 8px;
+    background: #FFE87A;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: 9px; */
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+.tarif__checkbox {
+    margin: 0 5px;
+}
+
+/* ________ input ________ */
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 93px;
+    height: 50px;
+    background: #B00000;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked+label {
+    background: #B00000;
+}
+
+input:checked+label:after {
+    left: calc(100% - 10px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 40px;
+}
+
+/* ________ input END ________ */
+.tarif__name {
+    width: 856px;
+    margin: 0 auto 85px auto;
+}
+
+.tarif__name-items {
+    display: flex;
+}
+
+.tarif__name-item {
+    width: 428px;
+}
+
+.tarif__name-link {
+    display: block;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    border-bottom: solid #C4C4C4 4px;
+}
+
+.tarif__name-link:hover {
+    border-bottom: solid #B00000 4px;
+}
+
+.tarif__cards {
+    width: 1097px;
+    display: flex;
+    gap: 100px;
+}
+
+.tarif__card {
+    width: 299px;
+    height: 716px;
+    border-radius: 15px;
+    border: 1.5px solid #C4C4C4;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    padding: 34px 0 0 35px;
+}
+
+.tarif__card-name {
+    color: #000;
+    
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    margin: 0 0 11px 0;
+}
+
+.tarif__card-description {
+    width: 235px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0 0 28px 0;
+}
+
+.tarif__card-price {
+    color: #000;
+    font-family: Poppins;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0 0 11px 0;
+}
+
+.tarif__card-price-frame {
+    color: #000;
+    
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 14px;
+    margin: 0 0 35px 0;
+}
+
+.tarif__card-button {
+    
+    margin: 0 0 35px 0;
+}
+.tarif__card-button-link{
+    display: block;
+
+    width: 235px;
+    height: 50px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45px;
+}
+.tarif__card-list{
+    padding: 0 0 0 0px;
+}
+.tarif__card-list-items {
+    
+    color: #808080;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+
+}
+
+.tarif__card-list-item {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    line-height: 40px;
+    
+}
+.tarif__card-list-item::marker{
+    
+}
+.tarif__card-list-marker{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+    
+}
+/* ----- tarif END----- */
+/* ----- reviews START ----- */
+.reviews{
+    display: flex;
+    width: 1194px;
+    margin: 0 auto 84px auto;
+    font-family: Inter
+}
+.reviews-wrap-left{
+    width: 604px;
+    margin: 0 30px 0 0;
+}
+.reviews-wrap-right{
+    width: 590px;
+    padding: 104px 0 0 0;
+}
+.reviews__title-wrap{
+    width: 540px;
+    margin: 0 0 24px 64px;
+   
+    position: relative;
+}
+.reviews__title-img{
+    display: block;
+    width: 143px;
+    height: 120px;
+    
+    position: absolute;
+    z-index: 0;
+}
+.reviews__title-text-wrap{
+    width: 445px;
+    margin: 0px 0 0 95px;
+    padding: 56px 0 0 0;
+}
+.reviews__title{
+   
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 900;
+    font-family: Inter
+}
+.reviews__title-description{
+    font-size: 18px;
+    line-height: 32px;
+    font-family: Inter
+}
+.reviews__item{
+    position: relative;
+    border-radius: 8px;
+    padding: 40px 32px 0 64px;
+    box-shadow: 0 10px 20px 0 #29292a23;
+}
+.reviews__item-1{
+    width: 350px;
+    margin: 0 0 0 254px;
+    padding-bottom: 96px;
+
+}
+.reviews__item-2{
+    width: 445px;
+    margin: 0 0 32px 0;
+    padding-bottom: 14px;
+}
+.reviews__item-3{
+    width: 350px;
+    padding-bottom: 32px;
+}
+.reviews__item-img{
+    margin: 0 0 15px 0;
+}
+.reviews__item-text-img{
+    position: absolute;
+    left: 32px;
+}
+.reviews__item-review{
+    margin: 0 0 24px 0;
+    font-size: 16px;
+    line-height: 32px;
+}
+.reviews__item-autor{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+}
+.reviews__item-prof{
+    /* margin: 0 0 14px 0; */
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #969BAB;
+}
+
+/* ----- reviews END ----- */
+/* ----- clients START ----- */
+
+.clients{
+    display: flex;
+    justify-content: space-between;
+    width: 1194px;
+    margin: 0 auto 106px auto;
+    font-family: Inter
+
+}
+.clients__description{
+    width: 445px;
+    margin: 21px 0 0 0;
+}
+.clients__description-title{
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 800;
+    margin: 0 0 8px 0;
+}
+.clients__description-text{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.clients-cards{
+    width: 490px;
+    display: flex;
+    column-gap: 65px;
+    flex-wrap: wrap;
+}
+/* ----- clients END ----- */
+
+/* ----- order-block START ----- */
+.order-block{
+    width: 1272px;
+    margin: 0 auto 110px auto;
+    font-family: Poppins;
+}
+.order-block__wrap{
+    width: 1232px;
+    height: 432px;
+    /* padding: 80px 0 0 0; */
+    background-color: #F7FAFE;
+    border-radius: 16px;
+    position: relative;
+    text-align: center;
+}
+.order-block__fon-element-1{
+    position: absolute;
+    left: 434px;
+}
+.order-block__fon-element-2{
+    position: absolute;
+    left: -15px;
+    top: 304px;
+}
+.order-block__fon-element-3{
+    position: absolute;
+    right: -25px;
+    top: 320px;
+}
+.order-block__title{
+    width: 1024px;
+    height: 256px;
+    margin: 0 auto 40px auto;
+    padding: 80px 0 0 0;
+    font-size: 64px;
+    line-height: 88px;
+    font-weight: 600;
+}
+.order-block__button {
+    width: 208px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background-color: #B00000;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.order-block__button:hover {
+    background: #B00000;
+    box-shadow: 0px 0px 64px 0px rgba(176, 0, 0, 0.30);
+    color: #fff;
+    border: none;
+}
+.order-block__button-img{
+    margin: 0 9px 0 0;
+    width: 22px;
+    height: 22px;
+}
+
+/* ----- order-block END ----- */
+
+/* ----- Footer START ----- */
+.footer{
+    width: 100%;
+    background-color: #B00000;
+    color: #fff;
+    padding: 64px 0 80px 0;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.footer__wrap{
+    width: 1260px;
+    margin: 0 auto; 
+    display: flex;
+    gap: 120px;
+}
+
+.logo-footer{
+    margin: 0 0 16px 0;
+}
+.footer__text{
+    width: 296px;
+    margin: 0 0 104px 0;
+    
+}
+.footer__link-top{
+    display: block;
+    font-weight: 700;
+    color: #FFF;
+    margin: 0 0 24px 0;
+}
+.footer__link{
+    display: block;
+    color: #FFF;
+    margin: 0 0 24px 0;
+}
+.footer__column-2, .footer__column-3, .footer__column-4, .footer__column-5{
+    margin: 16px 0 0 0;
+}
+.footer__wrap-bottom{
+    width: 1260px;
+    margin: 0 auto; 
 }
