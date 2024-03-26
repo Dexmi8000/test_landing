@@ -1,13 +1,13 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+
 }
 
 body {
-    padding: 0 0 0 0;
+    padding: 0 10px 0 10px;
+    width: 100%;
 }
 
 a {
@@ -25,7 +25,8 @@ li {
     display: flex;
     align-items: center;
     margin: 40px auto 80px auto;
-    max-width: 1138px;
+    padding: 0 10px 0 10px;
+    max-width: 1158px;
 }
 
 .menu {
@@ -105,6 +106,7 @@ li {
 
 /* ----- hosting-description START----- */
 .hosting-description {
+
     max-width: 1215px;
     display: flex;
     margin: 0px auto 79px auto;
@@ -115,8 +117,14 @@ li {
     margin-right: 81px;
 }
 
-.hosting-description__content-img {
+.hosting-description__content-img-wrap {
+    width: 100%;
     max-width: 552px;
+}
+
+.hosting-description__content-img {
+    width: 100%;
+
 }
 
 .hosting-description__menu {
@@ -174,17 +182,23 @@ li {
     z-index: 1;
 }
 
+.hosting-description__text-section {
+    max-width: 608px;
+}
+
 .hosting-description__title {
+    /* max-width: 608px; */
     margin: 0 0 34px 0;
     font-family: Poppins;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
-    line-height: 77.5px;
+    line-height: 78px;
     color: #2E2E2E;
 }
 
 .hosting-description__text {
+    max-width: 448px;
     margin: 0 0 60px 0;
     font-family: Inter;
     font-size: 16px;
@@ -222,6 +236,7 @@ li {
 
 /* ----- advantage START----- */
 .advantage {
+    width: 100%;
     max-width: 1284px;
     margin: 0 auto 0 auto;
     display: flex;
@@ -229,7 +244,8 @@ li {
 }
 
 .advantage__text-block {
-    width: 642px;
+    width: 100%;
+    max-width: 642px;
 
 }
 
@@ -254,6 +270,7 @@ li {
 }
 
 .advantage__partners {
+    width: 100%;
     max-width: 642px;
     height: 220px;
     display: flex;
@@ -274,13 +291,16 @@ li {
     margin-top: 0px;
 }
 
-.advantage__partners-item {}
+.advantage__partners-item {
+    /* width: 100%; */
+}
 
 .advantage__partners-img {
     width: 100%;
 }
 
 .advantage__points {
+    width: 100%;
     max-width: 1160px;
     display: flex;
     gap: 40px;
@@ -288,11 +308,12 @@ li {
 }
 
 .advantage__points-items {
-    width: 259px;
+    max-width: 259px;
     text-align: center;
+
 }
 
-.advantage__points-img {
+.advantage__points-img-wrap {
     margin: 0 0 12px 0;
 }
 
@@ -328,7 +349,7 @@ li {
 
 
 .tarif__top-text {
-    width: 650px;
+    max-width: 650px;
     color: #000;
     text-align: center;
     font-family: Poppins;
@@ -352,11 +373,13 @@ li {
 }
 
 .tarif__selector {
-    width: 650px;
+    width: 100%;
+    max-width: 650px;
     display: flex;
     gap: 25px;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0 auto 70px auto;
     padding: 0 0 0 87px;
 }
@@ -373,7 +396,7 @@ li {
 }
 
 .tarif__discount {
-    width: 87px;
+    max-width: 87px;
     height: 24px;
     border-radius: 8px;
     background: #FFE87A;
@@ -441,7 +464,7 @@ label:active:after {
 
 /* ________ input END ________ */
 .tarif__name {
-    width: 856px;
+    max-width: 856px;
     margin: 0 auto 85px auto;
 }
 
@@ -471,8 +494,10 @@ label:active:after {
 }
 
 .tarif__cards {
-    width: 1097px;
+    max-width: 1097px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 100px;
 }
 
@@ -487,7 +512,7 @@ label:active:after {
 
 .tarif__card-name {
     color: #000;
-    
+
     font-family: Poppins;
     font-size: 28px;
     font-style: normal;
@@ -519,7 +544,7 @@ label:active:after {
 
 .tarif__card-price-frame {
     color: #000;
-    
+
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
@@ -529,10 +554,11 @@ label:active:after {
 }
 
 .tarif__card-button {
-    
+
     margin: 0 0 35px 0;
 }
-.tarif__card-button-link{
+
+.tarif__card-button-link {
     display: block;
 
     width: 235px;
@@ -548,11 +574,13 @@ label:active:after {
     font-weight: 600;
     line-height: 45px;
 }
-.tarif__card-list{
+
+.tarif__card-list {
     padding: 0 0 0 0px;
 }
+
 .tarif__card-list-items {
-    
+
     color: #808080;
     font-family: Inter;
     font-size: 16px;
@@ -567,104 +595,122 @@ label:active:after {
     align-items: center;
     height: 40px;
     line-height: 40px;
-    
+
 }
-.tarif__card-list-item::marker{
-    
-}
-.tarif__card-list-marker{
+
+.tarif__card-list-item::marker {}
+
+.tarif__card-list-marker {
     display: block;
     width: 24px;
     height: 24px;
     margin-right: 24px;
-    
+
 }
+
 /* ----- tarif END----- */
 /* ----- reviews START ----- */
-.reviews{
+.reviews {
     display: flex;
-    width: 1194px;
+    flex-wrap: wrap;
+    max-width: 1194px;
     margin: 0 auto 84px auto;
     font-family: Inter
 }
-.reviews-wrap-left{
-    width: 604px;
+
+.reviews-wrap-left {
+    max-width: 604px;
     margin: 0 30px 0 0;
 }
-.reviews-wrap-right{
-    width: 590px;
+
+.reviews-wrap-right {
+    max-width: 550px;
     padding: 104px 0 0 0;
 }
-.reviews__title-wrap{
-    width: 540px;
+
+.reviews__title-wrap {
+    max-width: 540px;
     margin: 0 0 24px 64px;
-   
+
     position: relative;
 }
-.reviews__title-img{
+
+.reviews__title-img {
     display: block;
     width: 143px;
     height: 120px;
-    
+
     position: absolute;
     z-index: 0;
 }
-.reviews__title-text-wrap{
-    width: 445px;
+
+.reviews__title-text-wrap {
+    max-width: 445px;
     margin: 0px 0 0 95px;
     padding: 56px 0 0 0;
 }
-.reviews__title{
-   
+
+.reviews__title {
+
     font-size: 48px;
     line-height: 64px;
     font-weight: 900;
     font-family: Inter
 }
-.reviews__title-description{
+
+.reviews__title-description {
     font-size: 18px;
     line-height: 32px;
     font-family: Inter
 }
-.reviews__item{
+
+.reviews__item {
     position: relative;
     border-radius: 8px;
     padding: 40px 32px 0 64px;
     box-shadow: 0 10px 20px 0 #29292a23;
 }
-.reviews__item-1{
-    width: 350px;
+
+.reviews__item-1 {
+    max-width: 350px;
     margin: 0 0 0 254px;
     padding-bottom: 96px;
 
 }
-.reviews__item-2{
-    width: 445px;
+
+.reviews__item-2 {
+    max-width: 445px;
     margin: 0 0 32px 0;
     padding-bottom: 14px;
 }
-.reviews__item-3{
-    width: 350px;
+
+.reviews__item-3 {
+    max-width: 350px;
     padding-bottom: 32px;
 }
-.reviews__item-img{
+
+.reviews__item-img {
     margin: 0 0 15px 0;
 }
-.reviews__item-text-img{
+
+.reviews__item-text-img {
     position: absolute;
     left: 32px;
 }
-.reviews__item-review{
+
+.reviews__item-review {
     margin: 0 0 24px 0;
     font-size: 16px;
     line-height: 32px;
 }
-.reviews__item-autor{
+
+.reviews__item-autor {
     font-size: 18px;
     line-height: 28px;
     font-weight: 700;
 }
-.reviews__item-prof{
+
+.reviews__item-prof {
     /* margin: 0 0 14px 0; */
     font-size: 14px;
     line-height: 24px;
@@ -675,75 +721,86 @@ label:active:after {
 /* ----- reviews END ----- */
 /* ----- clients START ----- */
 
-.clients{
+.clients {
     display: flex;
     justify-content: space-between;
-    width: 1194px;
+    flex-wrap: wrap;
+    max-width: 1194px;
     margin: 0 auto 106px auto;
     font-family: Inter
-
 }
-.clients__description{
-    width: 445px;
+
+.clients__description {
+    max-width: 445px;
     margin: 21px 0 0 0;
 }
-.clients__description-title{
+
+.clients__description-title {
     font-size: 48px;
     line-height: 64px;
     font-weight: 800;
     margin: 0 0 8px 0;
 }
-.clients__description-text{
+
+.clients__description-text {
     font-size: 18px;
     line-height: 32px;
     font-weight: 400;
 }
-.clients-cards{
-    width: 490px;
+
+.clients-cards {
+    max-width: 490px;
     display: flex;
     column-gap: 65px;
     flex-wrap: wrap;
 }
+
 /* ----- clients END ----- */
 
 /* ----- order-block START ----- */
-.order-block{
-    width: 1272px;
+.order-block {
+    max-width: 1272px;
     margin: 0 auto 110px auto;
     font-family: Poppins;
 }
-.order-block__wrap{
-    width: 1232px;
-    height: 432px;
+
+.order-block__wrap {
+    max-width: 1232px;
+    min-height: 432px;
     /* padding: 80px 0 0 0; */
     background-color: #F7FAFE;
     border-radius: 16px;
     position: relative;
     text-align: center;
 }
-.order-block__fon-element-1{
+
+.order-block__fon-element-1 {
     position: absolute;
     left: 434px;
 }
-.order-block__fon-element-2{
+
+.order-block__fon-element-2 {
     position: absolute;
     left: -15px;
     top: 304px;
 }
-.order-block__fon-element-3{
+
+.order-block__fon-element-3 {
     position: absolute;
     right: -25px;
     top: 320px;
 }
-.order-block__title{
-    width: 1024px;
-    height: 256px;
+
+.order-block__title {
+    max-width: 1024px;
+    min-height: 256px;
     margin: 0 auto 40px auto;
     padding: 80px 0 0 0;
     font-size: 64px;
     line-height: 88px;
     font-weight: 600;
 }
+
 .order-block__button {
     width: 208px;
     height: 48px;
@@ -767,7 +824,8 @@ label:active:after {
     color: #fff;
     border: none;
 }
-.order-block__button-img{
+
+.order-block__button-img {
     margin: 0 9px 0 0;
     width: 22px;
     height: 22px;
@@ -775,8 +833,8 @@ label:active:after {
 
 /* ----- order-block END ----- */
 
-/* ----- Footer START ----- */
-.footer{
+/* ----- footer START ----- */
+.footer {
     width: 100%;
     background-color: #B00000;
     color: #fff;
@@ -786,36 +844,219 @@ label:active:after {
     line-height: 32px;
     font-weight: 400;
 }
-.footer__wrap{
-    width: 1260px;
-    margin: 0 auto; 
+
+.footer__wrap {
+    max-width: 1260px;
+    margin: 0 auto;
     display: flex;
     gap: 120px;
+    flex-wrap: wrap;
+    justify-content:center;
 }
 
-.logo-footer{
+.logo-footer {
     margin: 0 0 16px 0;
 }
-.footer__text{
-    width: 296px;
+
+.footer__text {
+    max-width: 296px;
     margin: 0 0 104px 0;
-    
+
 }
-.footer__link-top{
+
+.footer__link-top {
     display: block;
     font-weight: 700;
     color: #FFF;
     margin: 0 0 24px 0;
 }
-.footer__link{
+
+.footer__link {
     display: block;
     color: #FFF;
     margin: 0 0 24px 0;
 }
-.footer__column-2, .footer__column-3, .footer__column-4, .footer__column-5{
+
+.footer__column-2,
+.footer__column-3,
+.footer__column-4,
+.footer__column-5 {
     margin: 16px 0 0 0;
 }
-.footer__wrap-bottom{
-    width: 1260px;
-    margin: 0 auto; 
+
+.footer__wrap-bottom {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+/* ----- footer END ----- */
+
+
+/* ----- media ----- */
+
+@media screen and (max-width: 1283px) {
+    .advantage {
+        justify-content: center;
+    }
+
+    .advantage__text-block {
+        max-width: 800px;
+        margin-bottom: 10px;
+    }
+
+    .advantage__title {
+        text-align: center;
+    }
+
+    .advantage__text {
+        max-width: 100%;
+        text-align: center;
+    }
+    .reviews{
+        justify-content: center;
+    }
+    .footer {
+        
+        line-height: 24px;
+        
+    }
+    .footer__wrap{
+        gap: 35px;
+    }
+}
+
+@media screen and (max-width: 1105px) {
+    .hosting-description {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0 10px 40px 10px;
+    }
+
+    .hosting-description__content {
+        max-width: 100%;
+        margin: 0 0 40px 0;
+    }
+
+    .hosting-description__text-section {
+        max-width: 80%;
+    }
+
+    .hosting-description__button-section {
+        display: flex;
+    }
+
+    .hosting-description__button {
+        padding: 0 5px 0 5px;
+    }
+
+    .advantage__points {
+        max-width: 600px;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        margin: 50px auto 130px auto;
+        
+    }
+    .footer__text-author{
+        padding: 0 0 0 20px;
+    }
+    
+}
+
+@media screen and (max-width: 920px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .menu {
+        margin: 0;
+    }
+
+    .menu__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .reviews-wrap-left{
+        margin: 0;
+    }
+    .reviews__title-wrap{
+        margin: 0 0 24px 0;
+    }
+    .reviews__item-1{
+        margin: 0 0 0 0px;
+    }
+    .reviews-wrap-right{
+        padding: 30px 0 0 0;
+    }
+    .clients {
+        justify-content: center;
+    }
+
+   
+}
+
+@media screen and (max-width: 600px) {
+    .hosting-description__title {
+        font-size: 48px;
+        line-height: 62px;
+    }
+
+    .advantage__points {
+        min-width: 100%;
+        flex-wrap: wrap;
+
+    }
+    .advantage__points-img {
+        width: 25%;
+    }
+
+    .advantage__partners {
+        height: 100%;
+        padding: 0;
+    }
+
+    .advantage__partners-items {
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .advantage__partners-item {
+        /* width: 320px; */
+        margin: 0 90px 20px 90px;
+    }
+    .tarif__selector{
+        /* width: 100px; */
+        padding: 0;
+    }
+    .order-block__fon-element-1{
+        display: none;
+    }
+   
+}
+
+@media screen and (max-width: 425px) {
+    .tarif__selector{
+        gap: 10px;
+        justify-content: flex-end;
+    }
+    .reviews__title-img{
+        display: none;
+    }
+    .reviews__title-text-wrap{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .menu__account{
+        padding: 0 10px 0 0;
+    }
+    .hosting-description__title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+   
 }
